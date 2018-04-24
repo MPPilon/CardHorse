@@ -54,7 +54,7 @@ class Card(models.Model):
     traits = ArrayField(models.PositiveSmallIntegerField, null=True)
     colour = ArrayField(models.PositiveSmallIntegerField, null=True)
 
-    # TODO: Colour requirements are currently the same power for all colours, but this could change! How to handle?
+    # EVENTUALLY: Colour requirements are currently the same power for all colours, but this could change!
     requirement_power = models.PositiveSmallIntegerField(null=True)
     requirement_colours = ArrayField(models.PositiveSmallIntegerField, null=True)
 
