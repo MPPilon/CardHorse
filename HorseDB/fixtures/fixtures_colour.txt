@@ -1,0 +1,93 @@
+[
+    {
+        "model": "HorseDB.colour",
+        "pk": 1,
+        "fields": {
+            "colour": "Blue"
+        }
+    },
+    {
+        "model": "HorseDB.colour",
+        "pk": 2,
+        "fields": {
+            "colour": "Orange"
+        }
+    },
+    {
+        "model": "HorseDB.colour",
+        "pk": 3,
+        "fields": {
+            "colour": "Pink"
+        }
+    },
+    {
+        "model": "HorseDB.colour",
+        "pk": 4,
+        "fields": {
+            "colour": "Purple"
+        }
+    },
+    {
+        "model": "HorseDB.colour",
+        "pk": 5,
+        "fields": {
+            "colour": "White"
+        }
+    },
+    {
+        "model": "HorseDB.colour",
+        "pk": 6,
+        "fields": {
+            "colour": "Yellow"
+        }
+    },
+    {
+        "model": "HorseDB.colour",
+        "pk": 7,
+        "fields": {
+            "colour": "Not-Blue"
+        }
+    },
+    {
+        "model": "HorseDB.colour",
+        "pk": 8,
+        "fields": {
+            "colour": "Not-Orange"
+        }
+    },
+    {
+        "model": "HorseDB.colour",
+        "pk": 9,
+        "fields": {
+            "colour": "Not-Pink"
+        }
+    },
+    {
+        "model": "HorseDB.colour",
+        "pk": 10,
+        "fields": {
+            "colour": "Not-Purple"
+        }
+    },
+    {
+        "model": "HorseDB.colour",
+        "pk": 11,
+        "fields": {
+            "colour": "Not-White"
+        }
+    },
+    {
+        "model": "HorseDB.colour",
+        "pk": 12,
+        "fields": {
+            "colour": "Not-Yellow"
+        }
+    },
+    {
+        "model": "HorseDB.colour",
+        "pk": 13,
+        "fields": {
+            "colour": "Wild"
+        }
+    }
+]

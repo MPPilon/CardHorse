@@ -12,6 +12,7 @@ class GameSet(models.Model):
     ##
     # Lookup table for card sets; Premier, Canterlot Nights, and so on
     ##
+
     PREMIER = 1
     CANTERLOT_NIGHTS = 2
     CRYSTAL_GAMES = 3
@@ -27,10 +28,11 @@ class GameSet(models.Model):
     # which will be numbered 999 as it can (and has!) cards considered to be in various sets, and thus blocks
     ROCK_AND_RAVE = 101
     CELESTIAL_SOLSTICE = 102
-    SANDS_OF_TIME = 201
+    SANDS_OF_TIME = 201  # Used for two cards which are not legal as of yet
     GENERIC_SET = 999
 
     set_name = models.CharField(max_length=100)
+    short_code = models.CharField(max_length=3, unique=True)
 
 
 class Colour(models.Model):
@@ -71,6 +73,7 @@ class CardRarity(models.Model):
     ULTRA_RARE = 5
     ROYAL_RARE = 6
     PROMO = 7
+    FOIL = 8  # For the first few sets, there were foil cards of other rarities instead of super rares.
 
     rarity_name = models.CharField(max_length=15)
 
@@ -94,10 +97,10 @@ class Trait(models.Model):
     # This is the lookup table for available traits in the game. They are not listed in any particular order, but are
     #  categorized by card type.
     # As far as I have discovered, this is the full list of traits in alphabetical order:
-    # Accessory, Ahuizotl, Alicorn, Ally, Artifact, Asset, Breezie, Buffalo, Changeling, Chaotic, Condition, Cow,
+    # Accessory, Ahuizotl, Alicorn, Ally, Armor, Artifact, Asset, Breezie, Buffalo, Changeling, Chaotic, Condition, Cow,
     # Crystal, Dilemma, Donkey, Draconequus, Dragon, Earth Pony, Elder, Epic, Foal, Griffon, Gotcha, Location, Mailbox,
-    # Minotaur, Pegasus, Pirate, Pony Tone, Report, Rock, Royalty, Sea Serpent, Seapony, Seashell, Showdown, Song,
-    # Storm, Tree, Unicorn, Unique, Yak, Zebra
+    # Minotaur, Pegasus, Performer, Pirate, Pony Tone, Report, Rock, Royalty, Sea Serpent, Seapony, Seashell, Showdown,
+    # Siren, Song, Storm, Tree, Unicorn, Unique, Yak, Zebra
     ##
     EARTH_PONY = 1
     PEGASUS = 2
@@ -153,5 +156,8 @@ class Trait(models.Model):
 
     # Traits added under this line were forgotten in the initial setup or added after Seaquestria and Beyond. Don't
     #  forget to add the trait to the table itself, and its associated fixture!
+    PERFORMER = 45
+    ARMOR = 46
+    SIREN = 47
 
     trait_name = models.CharField(max_length=30)

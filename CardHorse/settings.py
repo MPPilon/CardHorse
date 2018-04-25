@@ -30,14 +30,20 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = [
+PREREQ_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles'
 ]
+
+PROJECT_APPS = [
+    'HorseDB',
+]
+
+INSTALLED_APPS = PREREQ_APPS + PROJECT_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -78,7 +84,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'CardHorse',
         'USER': 'cardhorse',
-        'PASSWORD': 'g24n5b35Gg404#$Hjt2*@#Th',
+        'PASSWORD': 'g24n5b35Gg404#$Hjt2*@#Th',  # TODO: Change this to use an environment var instead
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }

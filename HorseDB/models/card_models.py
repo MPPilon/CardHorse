@@ -38,10 +38,10 @@ class CardFriend(Card):
     ##
     power = models.SmallIntegerField()
     cost = models.SmallIntegerField()
-    colour = ArrayField(models.ForeignKey(lookup_models.Colour, on_delete=models.PROTECT), null=True)
-    requirement_colour = ArrayField(models.ForeignKey(lookup_models.Colour, on_delete=models.PROTECT), null=True)
+    colour = ArrayField(models.SmallIntegerField(), null=True)
+    requirement_colour = ArrayField(models.SmallIntegerField(), null=True)
     requirement_power = models.SmallIntegerField(default=0)
-    trait = ArrayField(models.ForeignKey(lookup_models.Trait, on_delete=models.PROTECT), null=True)
+    trait = ArrayField(models.SmallIntegerField(), null=True)
 
 
 class CardEvent(Card):
@@ -50,9 +50,9 @@ class CardEvent(Card):
     ##
     power = models.SmallIntegerField()
     cost = models.SmallIntegerField()
-    requirement_colour = ArrayField(models.ForeignKey(lookup_models.Colour, on_delete=models.PROTECT), null=True)
+    requirement_colour = ArrayField(models.SmallIntegerField(), null=True)
     requirement_power = models.SmallIntegerField(default=0)
-    trait = ArrayField(models.ForeignKey(lookup_models.Trait, on_delete=models.PROTECT), null=True)
+    trait = ArrayField(models.SmallIntegerField(), null=True)
 
 
 class CardResource(Card):
@@ -61,9 +61,9 @@ class CardResource(Card):
     ##
     power = models.SmallIntegerField()
     cost = models.SmallIntegerField()
-    requirement_colour = ArrayField(models.ForeignKey(lookup_models.Colour, on_delete=models.PROTECT), null=True)
+    requirement_colour = ArrayField(models.SmallIntegerField(), null=True)
     requirement_power = models.SmallIntegerField(default=0)
-    trait = ArrayField(models.ForeignKey(lookup_models.Trait, on_delete=models.PROTECT), null=True)
+    trait = ArrayField(models.SmallIntegerField(), null=True)
 
 
 class CardDilemma(CardResource):
@@ -74,9 +74,9 @@ class CardDilemma(CardResource):
     # Similarly to the CardProblem model, care should be taken to ensure that colour and power requirement indices
     #  match up between the arrays so that they can be processed properly when displaying the card's attributes.
     ##
-    owner_requirement_colour = ArrayField(models.ForeignKey(lookup_models.Colour, on_delete=models.PROTECT))
+    owner_requirement_colour = ArrayField(models.SmallIntegerField())
     owner_requirement_power = ArrayField(models.SmallIntegerField())
-    opposing_requirement_colour = ArrayField(models.ForeignKey(lookup_models.Colour, on_delete=models.PROTECT))
+    opposing_requirement_colour = ArrayField(models.SmallIntegerField())
     opposing_requirement_power = ArrayField(models.SmallIntegerField())
     bonus = models.SmallIntegerField()
 
@@ -87,7 +87,7 @@ class CardTroublemaker(Card):
     ##
     power = models.SmallIntegerField()
     bonus = models.SmallIntegerField()
-    trait = ArrayField(models.ForeignKey(lookup_models.Trait, on_delete=models.PROTECT), null=True)
+    trait = ArrayField(models.SmallIntegerField(), null=True)
 
 
 class CardProblem(Card):
@@ -98,9 +98,9 @@ class CardProblem(Card):
     #  how much of each colour is needed for each side. Nobody wants that many attributes on a table. NOBODY.
     # The length of the colour array must be equal to the length of the power array.
     ##
-    owner_requirement_colour = ArrayField(models.ForeignKey(lookup_models.Colour, on_delete=models.PROTECT))
+    owner_requirement_colour = ArrayField(models.SmallIntegerField())
     owner_requirement_power = ArrayField(models.SmallIntegerField())
-    opposing_requirement_colour = ArrayField(models.ForeignKey(lookup_models.Colour, on_delete=models.PROTECT))
+    opposing_requirement_colour = ArrayField(models.SmallIntegerField())
     opposing_requirement_power = ArrayField(models.SmallIntegerField())
     bonus = models.SmallIntegerField()
 
@@ -113,7 +113,7 @@ class CardMane(Card):
     ##
     power = models.SmallIntegerField()
     boosted_power = models.SmallIntegerField()
-    trait = ArrayField(models.ForeignKey(lookup_models.Trait, on_delete=models.PROTECT))
-    boosted_trait = ArrayField(models.ForeignKey(lookup_models.Trait, on_delete=models.PROTECT))
+    trait = ArrayField(models.SmallIntegerField())
+    boosted_trait = ArrayField(models.SmallIntegerField())
     boosted_rules_text = models.CharField(max_length=200, null=True)
     boosted_flavour_text = models.CharField(max_length=200, null=True)

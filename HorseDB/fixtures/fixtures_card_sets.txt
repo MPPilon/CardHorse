@@ -1,0 +1,106 @@
+[
+    {
+        "model": "HorseDB.gameset",
+        "pk": 1,
+        "fields": {
+            "set_name": "Premier",
+            "short_code": "PR"
+        }
+    },
+    {
+        "model": "HorseDB.gameset",
+        "pk": 2,
+        "fields": {
+            "set_name": "Canterlot Nights",
+            "short_code": "CN"
+        }
+    },
+    {
+        "model": "HorseDB.gameset",
+        "pk": 3,
+        "fields": {
+            "set_name": "Crystal Games",
+            "short_code" "CG"
+        }
+    },
+    {
+        "model": "HorseDB.gameset",
+        "pk": 4,
+        "fields": {
+            "set_name": "Absolute Discord",
+            "short_code": "AD"
+        }
+    },
+    {
+        "model": "HorseDB.gameset",
+        "pk": 5,
+        "fields": {
+            "set_name": "Equestrian Odysseys",
+            "short_code": "EO"
+        }
+    },
+    {
+        "model": "HorseDB.gameset",
+        "pk": 6,
+        "fields": {
+            "set_name": "High Magic",
+            "short_code": "HM"
+        }
+    },
+    {
+        "model": "HorseDB.gameset",
+        "pk": 7,
+        "fields": {
+            "set_name": "Marks in Time",
+            "short_code": "MT"
+        }
+    },
+    {
+        "model": "HorseDB.gameset",
+        "pk": 8,
+        "fields": {
+            "set_name": "Defenders of Equestria",
+            "short_code": "DE"
+        }
+    },
+    {
+        "model": "HorseDB.gameset",
+        "pk": 9,
+        "fields": {
+            "set_name": "Seaquestria and Beyond",
+            "short_code": "SB"
+        }
+    },
+    {
+        "model": "HorseDB.gameset",
+        "pk": 101,
+        "fields": {
+            "set_name": "Rock and Rave",
+            "short_code": "RR"
+        }
+    },
+    {
+        "model": "HorseDB.gameset",
+        "pk": 102,
+        "fields": {
+            "set_name": "Celestial Solstice",
+            "short_code": "CS"
+        }
+    },
+    {
+        "model": "HorseDB.gameset",
+        "pk": 201,
+        "fields": {
+            "set_name": "Sands of Time",
+            "short_code": "ST"
+        }
+    },
+    {
+        "model": "HorseDB.gameset",
+        "pk": 999,
+        "fields": {
+            "set_name": "Generic Fixed Set",
+            "short_code": "GF"
+        }
+    }
+]
