@@ -1,0 +1,330 @@
+[{
+		"model": "HorseDB.trait",
+		"pk": 1,
+		"fields": {
+			"trait_name": "Earth Pony"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 2,
+		"fields": {
+			"trait_name": "Pegasus"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 3,
+		"fields": {
+			"trait_name": "Unicorn"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 4,
+		"fields": {
+			"trait_name": "Alicorn"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 5,
+		"fields": {
+			"trait_name": "Critter"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 6,
+		"fields": {
+			"trait_name": "Rock"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 7,
+		"fields": {
+			"trait_name": "Dragon"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 8,
+		"fields": {
+			"trait_name": "Draconequus"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 9,
+		"fields": {
+			"trait_name": "Ally"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 10,
+		"fields": {
+			"trait_name": "Ahuizotl"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 11,
+		"fields": {
+			"trait_name": "Royalty"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 12,
+		"fields": {
+			"trait_name": "Changeling"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 13,
+		"fields": {
+			"trait_name": "Seashell"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 14,
+		"fields": {
+			"trait_name": "Cow"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 15,
+		"fields": {
+			"trait_name": "Tree"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 16,
+		"fields": {
+			"trait_name": "Elder"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 17,
+		"fields": {
+			"trait_name": "Foal"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 18,
+		"fields": {
+			"trait_name": "Minotaur"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 19,
+		"fields": {
+			"trait_name": "Zebra"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 20,
+		"fields": {
+			"trait_name": "Buffalo"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 21,
+		"fields": {
+			"trait_name": "Crystal"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 22,
+		"fields": {
+			"trait_name": "Breezie"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 23,
+		"fields": {
+			"trait_name": "Donkey"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 24,
+		"fields": {
+			"trait_name": "Griffon"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 25,
+		"fields": {
+			"trait_name": "Sea Serpent"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 26,
+		"fields": {
+			"trait_name": "Yak"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 27,
+		"fields": {
+			"trait_name": "Pirate"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 28,
+		"fields": {
+			"trait_name": "Storm"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 29,
+		"fields": {
+			"trait_name": "Seapony"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 30,
+		"fields": {
+			"trait_name": "Pony Tone"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 31,
+		"fields": {
+			"trait_name": "Chaotic"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 32,
+		"fields": {
+			"trait_name": "Unique"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 33,
+		"fields": {
+			"trait_name": "Gotcha"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 34,
+		"fields": {
+			"trait_name": "Showdown"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 35,
+		"fields": {
+			"trait_name": "Song"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 36,
+		"fields": {
+			"trait_name": "Accessory"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 37,
+		"fields": {
+			"trait_name": "Location"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 38,
+		"fields": {
+			"trait_name": "Asset"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 39,
+		"fields": {
+			"trait_name": "Condition"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 40,
+		"fields": {
+			"trait_name": "Report"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 41,
+		"fields": {
+			"trait_name": "Artifact"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 42,
+		"fields": {
+			"trait_name": "Mailbox"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 43,
+		"fields": {
+			"trait_name": "Dilemma"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 44,
+		"fields": {
+			"trait_name": "Epic"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 45,
+		"fields": {
+			"trait_name": "Performer"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 46,
+		"fields": {
+			"trait_name": "Armor"
+		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 47,
+		"fields": {
+			"trait_name": "Siren"
+		}
+	}
+]

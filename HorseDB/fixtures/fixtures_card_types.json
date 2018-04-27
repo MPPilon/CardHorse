@@ -1,0 +1,44 @@
+[
+    {
+        "model": "HorseDB.cardtype",
+        "pk": 1,
+        "fields": {
+            "type": "Friend"
+        }
+    },
+    {
+        "model": "HorseDB.cardtype",
+        "pk": 2,
+        "fields": {
+            "type": "Event"
+        }
+    },
+    {
+        "model": "HorseDB.cardtype",
+        "pk": 3,
+        "fields": {
+            "type": "Resource"
+        }
+    },
+    {
+        "model": "HorseDB.cardtype",
+        "pk": 4,
+        "fields": {
+            "type": "Troublemaker"
+        }
+    },
+    {
+        "model": "HorseDB.cardtype",
+        "pk": 5,
+        "fields": {
+            "type": "Mane"
+        }
+    },
+    {
+        "model": "HorseDB.cardtype",
+        "pk": 6,
+        "fields": {
+            "type": "Problem"
+        }
+    }
+]

@@ -1,0 +1,57 @@
+[{
+		"model": "HorseDB.cardrarity",
+		"pk": 1,
+		"fields": {
+			"rarity_name": "Common"
+		}
+	},
+	{
+		"model": "HorseDB.cardrarity",
+		"pk": 2,
+		"fields": {
+			"rarity_name": "Uncommon"
+		}
+	},
+	{
+		"model": "HorseDB.cardrarity",
+		"pk": 3,
+		"fields": {
+			"rarity_name": "Rare"
+		}
+	},
+	{
+		"model": "HorseDB.cardrarity",
+		"pk": 4,
+		"fields": {
+			"rarity_name": "Super Rare"
+		}
+	},
+	{
+		"model": "HorseDB.cardrarity",
+		"pk": 5,
+		"fields": {
+			"rarity_name": "Ultra Rare"
+		}
+	},
+	{
+		"model": "HorseDB.cardrarity",
+		"pk": 6,
+		"fields": {
+			"rarity_name": "Royal Rare"
+		}
+	},
+	{
+		"model": "HorseDB.cardrarity",
+		"pk": 7,
+		"fields": {
+			"rarity_name": "Promo"
+		}
+	},
+	{
+		"model": "HorseDB.cardrarity",
+		"pk": 8,
+		"fields": {
+			"rarity_name": "Foil"
+		}
+	}
+]

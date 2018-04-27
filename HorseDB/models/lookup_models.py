@@ -114,7 +114,7 @@ class Trait(models.Model):
     AHUIZOTL = 10  # Ahuizotl literally gets his own trait because of course he does
     ROYALTY = 11  # Fun Fact: The only Alicorn that doesn't have this trait is Big Mac, Princess for a Night!
     CHANGELING = 12
-    SEASHELL = 13  # Pretty much just the tokens plus Shelly & Sheldon
+    SEASHELL = 13  # Only exists on tokens at the moment
     COW = 14  # There is one card that uses this: Bessie, Bathtime
     TREE = 15  # On only a single card: Bloomberg, Deep Roots
     ELDER = 16  # Granny Smith and a few others use this one
