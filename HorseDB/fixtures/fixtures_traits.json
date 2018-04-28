@@ -326,5 +326,12 @@
 		"fields": {
 			"trait_name": "Siren"
 		}
+	},
+	{
+		"model": "HorseDB.trait",
+		"pk": 999,
+		"fields": {
+			"trait_name": "ERROR"
+		}
 	}
 ]

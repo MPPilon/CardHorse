@@ -1,4 +1,4 @@
-"""CardHorse URL Configuration
+"""CardHorse DB URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.0/topics/http/urls/
@@ -16,9 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
-urlpatterns = [
+from HorseDB import views
 
-    path('api/', include('HorseAPI.urls')),
-    path('db/', include('HorseDB.urls')),
-    path('admin/', admin.site.urls),
+urlpatterns = [
+    # Example: "<domain>/db/"
+    path(r'', views.database_homepage, name='database_homepage'),
+
+    # Example: "<domain>/db/ajax_fetch_all_cards/"
+    path(r'ajax_fetch_all_cards', views.ajax_fetch_all_cards, name='ajax_fetch_all_cards'),
+
+    # Example: "<domain>/db/admin/acquire_cards/"
+    path(r'admin/acquire_cards', views.database_admin_acquire_card_list, name='admin_acquire_cards'),
+
 ]

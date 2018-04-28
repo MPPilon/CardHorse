@@ -53,5 +53,12 @@
 		"fields": {
 			"rarity_name": "Foil"
 		}
+	},
+	{
+		"model": "HorseDB.cardrarity",
+		"pk": 9,
+		"fields": {
+			"rarity_name": "Fixed"
+		}
 	}
 ]

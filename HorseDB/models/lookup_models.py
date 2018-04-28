@@ -74,6 +74,7 @@ class CardRarity(models.Model):
     ROYAL_RARE = 6
     PROMO = 7
     FOIL = 8  # For the first few sets, there were foil cards of other rarities instead of super rares.
+    FIXED = 9
 
     rarity_name = models.CharField(max_length=15)
 
@@ -102,6 +103,17 @@ class Trait(models.Model):
     # Minotaur, Pegasus, Performer, Pirate, Pony Tone, Report, Rock, Royalty, Sea Serpent, Seapony, Seashell, Showdown,
     # Siren, Song, Storm, Tree, Unicorn, Unique, Yak, Zebra
     ##
+
+    def __getitem__(self, arg):
+        ##
+        # This allows the programming to call the Trait class like an array to get values, e.g. Trait['Unicorn']
+        ##
+        arg = arg.replace(' ', '_')  # Ensure that traits like Earth Pony and Pony Tone work correctly
+        if arg.upper() in vars(Trait):
+            return getattr(self, arg.upper())
+        else:
+            return 999
+
     EARTH_PONY = 1
     PEGASUS = 2
     UNICORN = 3
@@ -159,5 +171,7 @@ class Trait(models.Model):
     PERFORMER = 45
     ARMOR = 46
     SIREN = 47
+
+    ERROR = 999
 
     trait_name = models.CharField(max_length=30)

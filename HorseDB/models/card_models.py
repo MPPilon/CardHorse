@@ -28,7 +28,7 @@ class Card(models.Model):
     card_title = models.CharField(max_length=100)
     card_subtitle = models.CharField(max_length=100, null=True)
     card_rules_text = models.CharField(max_length=500, null=True)
-    card_flavour_text = models.CharField(max_length=300, null=True)
+    card_flavour_text = models.CharField(max_length=500, null=True)
     card_banned = models.BooleanField(default=False)
 
 
@@ -40,7 +40,7 @@ class CardFriend(Card):
     cost = models.SmallIntegerField()
     colour = ArrayField(models.SmallIntegerField(), null=True)
     requirement_colour = ArrayField(models.SmallIntegerField(), null=True)
-    requirement_power = models.SmallIntegerField(default=0)
+    requirement_power = models.SmallIntegerField(default=0)  # This *may* need to change to an ArrayField!
     trait = ArrayField(models.SmallIntegerField(), null=True)
 
 
@@ -113,7 +113,10 @@ class CardMane(Card):
     ##
     power = models.SmallIntegerField()
     boosted_power = models.SmallIntegerField()
-    trait = ArrayField(models.SmallIntegerField())
+    colour = ArrayField(models.SmallIntegerField(), null=True)
+    trait = ArrayField(models.SmallIntegerField(), null=True)
     boosted_trait = ArrayField(models.SmallIntegerField())
-    boosted_rules_text = models.CharField(max_length=200, null=True)
-    boosted_flavour_text = models.CharField(max_length=200, null=True)
+    boosted_rules_text = models.CharField(max_length=500, null=True)
+    boosted_flavour_text = models.CharField(max_length=500, null=True)
+    boosted_title = models.CharField(max_length=100)
+    boosted_subtitle = models.CharField(max_length=100, null=True)
