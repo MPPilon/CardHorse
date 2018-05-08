@@ -3,6 +3,8 @@ from django.http import HttpResponse
 import urllib.request
 import json
 
+from django.template.response import TemplateResponse
+
 from HorseDB.db_utils import parse_colour_to_model, parse_traits_to_model, parse_req_power_to_model, \
     parse_mane_start_power, parse_mane_boosted_power, parse_mane_start_traits_to_model, \
     parse_mane_boosted_traits_to_model, parse_mane_start_flavour_text, parse_mane_start_rules_text, \
@@ -10,14 +12,15 @@ from HorseDB.db_utils import parse_colour_to_model, parse_traits_to_model, parse
     parse_mane_boosted_subtitle, parse_mane_start_title, parse_mane_start_subtitle, parse_card_rarity_to_model, \
     resolve_card_type, resolve_card_rarity, resolve_card_set_by_short_code
 from HorseDB.models import GameSet, CardFriend, CardEvent, CardResource, CardMane, CardTroublemaker, CardProblem, \
-    CardType, CardDilemma, Colour
+    CardType, CardDilemma, Colour, Card
 
 
 def database_homepage(request):
     ##
     # This view sends the user to the card database homepage
     ##
-    return HttpResponse(200)
+
+    return TemplateResponse()
 
 
 def database_admin_acquire_card_list(request):
