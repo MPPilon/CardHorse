@@ -13,9 +13,11 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 
+from CardHorse import settings
 from HorseDB import views
 
 urlpatterns = [
@@ -28,4 +30,4 @@ urlpatterns = [
     # Example: "<domain>/db/admin/acquire_cards/"
     path(r'admin/acquire_cards', views.database_admin_acquire_card_list, name='admin_acquire_cards'),
 
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

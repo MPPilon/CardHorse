@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<!--
+This is the Database Index page. It doesn't have much to it by itself, it just loads a foundation to put
+ other data into, such as the most recent card search results.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width" />
+    <title>CardHorse Database</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+          crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+    <script src="{% static 'HorseDB/js/react.min.js' %}"></script>
+    <script src="{% static 'HorseDB/js/react-dom.min.js' %}"></script>
+    <link href="{% static 'HorseDB/css/main.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div id="fixed-sidebar" class="d-none d-sm-block">
+
+    </div>
+    <div id="fixed-sidebar-small" class="d-sm-none">
+
+    </div>
+    <div class="row justify-content-start">
+        <div class="col-2 col-sm-1" style="height: 500px; background: orange;">
+
+        </div>
+        <div class="col-10 offset-0 col-sm-11 col-lg-9 offset-lg-1" style="height: 500px; background: darkred;">
+            <div class="container" style="height: 500px; background: darkgreen;">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

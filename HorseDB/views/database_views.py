@@ -20,7 +20,7 @@ def database_homepage(request):
     # This view sends the user to the card database homepage
     ##
 
-    return TemplateResponse()
+    return TemplateResponse(request, 'index.html')
 
 
 def database_admin_acquire_card_list(request):
@@ -28,6 +28,7 @@ def database_admin_acquire_card_list(request):
     # This view is admin-only and can only be accessed if a correct password is submitted with the request. It grabs
     #  all of the cards in the game from Aracat's MLPCCG API at http://www.ferrictorus.com/mlpapi1/
     ##
+    return None
     api_domain = 'http://www.ferrictorus.com/mlpapi1/'
     query = 'cards?query=allids:""'
     print("Attempting to get card list from " + api_domain + query)
